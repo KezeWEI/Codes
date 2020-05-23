@@ -1,0 +1,28 @@
+<h2 class="sub-header">Add new contact</h2>
+<form >
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input
+      type="email"
+      class="form-control"
+      id="name"
+      name="name"
+      placeholder="Name"
+      [(ngModel)]="list.name">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+      placeholder="Email"
+      [(ngModel)]="list.email">
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone</label>
+    <input type="text" class="form-control" id="phone" name="phone"  placeholder="Phone number" [(ngModel)]="list.phone"> 
+  </div>
+  <button type="submit" class="btn btn-info" (click)="submit()">Create</button>
+</form>
